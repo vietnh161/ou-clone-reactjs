@@ -21,6 +21,10 @@ export class Layout extends Component {
       </div>
     );
   }
+  componentDidMount(): void {
+      console.log(1);
+      
+  }
 }
 
 export default Layout;
