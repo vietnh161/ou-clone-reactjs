@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #ffffff;
+    --font-color: #1f1f1f;
+    --bg-element: #ffffff;
+    --bg-grounded-element: #f8f8f8;
+    --bg-disabled: #e7e9ec;
+    --text-normal: #1f1f1f;
+    --text-description: #787474;
+    --text-subscription: #787474;
+    --text-btn-primary: #ffffff;
+    --text-notification: #ffffff; /* text in toaster */
+    --text-placeholder:#787474;
+    --text-light: #ffffff;
+    --border-normal: #e7e9ec;
+    --box-shadow-item: rgba(61, 57, 57, 0.1);
+    --hr-line: #e7e9ec;
+    --error: #ef6565;
+    --warning: #fda946;
+    --success: #34a853;
+    --loading-gradient-start: #ededed;
+    --loading-gradient-end: #f8f8f8;
+    --loading-gradient-bound: #ffffff00;
+    --loading-gradient-center: #ffffff99;
+    --cdk-overlay-backdrop-color: rgba(0,0,0,.32);
+  
+    --bg-store-selector: #ffffff;
+    --bg-login-group-btn: #ffffff;
+    --bg-login-btn-inactive: #f8f8f8;
+    --bg-preorder-btn-inactive: #f8f8f8;
+    --bg-switch-select-method: #ffffff;
+    --bg-switch-select-method-active: #f8f8f8;
+    --bg-product-detail: #ffffff;
+    --bg-p-detail-option-header: #f8f8f8;
+    --bg-add-product-detail: #ffffff;
+    --bg-cart-item: #ffffff;
+    --bg-cart-upsell-item: #ffffff;
+    --bg-secondary-bottom-sheet: #ffffff;
+    --bg-primary-bottom-sheet: #ffffff;
+    --bg-secondary-dialog: #ffffff;
+    --bg-primary-dialog: #ffffff;
+    --bg-cart-general-input: #f8f8f8;
+    --bg-cart-bottom-button: #ffffff;
+    --text-cart-customer-info: #1f1f1f;
+    --text-popup-notification: #1f1f1f; /* text in notification dialog */
+  
+    --bg-desktop-store-card: linear-gradient(0deg, rgba(70, 70, 241, 0.1), rgba(70, 70, 241, 0.1));
+    --shadow-desktop-store-card: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --bg-desktop-sidebar-category: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08));
+    --bg-product-card: #fff;
+    --shadow-product-card: 0px 4px 16px #3d39391a;
+    --bg-appended-message: #e2e9ff;
+  }
+  
+
+$primary-colour: var(--primary-colour);
+$primary-colour-light-fifty: var(--primary-colour-light-fifty);
+$secondary-colour: var(--secondary-colour);
+$secondary-colour-light-fifty: var(--secondary-colour-light-fifty);
+
+$bg-color: var(--bg-color);
+$bg-element: var(--bg-element);
+$bg-grounded-element: var(--bg-grounded-element);
+$bg-disabled: var(--bg-disabled);
+$text-disabled: var(--text-disabled);
+$text-normal: var(--text-normal);
+$text-description: var(--text-description);
+$text-subscription: var(--text-subscription);
+$text-btn-primary: var(--text-btn-primary);
+$text-btn-secondary: var(--primary-colour);
+$text-notification: var(--text-notification);
+$text-placeholder: var(--text-placeholder);
+$text-popup-notification: var(--text-popup-notification);
+$border-normal: var(--border-normal);
+$box-shadow-item: var(--box-shadow-item);
+$checkbox-frame: var(--primary-colour);
+$hr-line: var(--hr-line);
+$error: var(--error);
+$warning: var(--warning);
+$success: var(--success);
+$loading-gradient-start: var(--loading-gradient-start);
+$loading-gradient-end: var(--loading-gradient-end);
+$loading-gradient-bound: var(--loading-gradient-bound);
+$loading-gradient-center: var(--loading-gradient-center);
+$text-light: var(--text-light);
+$cdk-overlay-backdrop-color: var(--cdk-overlay-backdrop-color);
+
+$bg-store-selector: var(--bg-store-selector);
+$bg-login-group-btn: var(--bg-login-group-btn);
+$bg-login-btn-inactive: var(--bg-login-btn-inactive);
+$bg-preorder-btn-inactive: var(--bg-preorder-btn-inactive);
+$bg-switch-select-method: var(--bg-switch-select-method);
+$bg-switch-select-method-active: var(--bg-switch-select-method-active);
+$bg-product-detail: var(--bg-product-detail);
+$bg-p-detail-option-header: var(--bg-p-detail-option-header);
+$bg-add-product-detail: var(--bg-add-product-detail);
+$bg-cart-item: var(--bg-cart-item);
+$bg-cart-upsell-item: var(--bg-cart-upsell-item);
+$bg-cart-general-input: var(--bg-cart-general-input);
+$bg-cart-bottom-button: var(--bg-cart-bottom-button);
+$text-cart-customer-info: var(--text-cart-customer-info);
+$text-popup-notification: var(--text-popup-notification);
+$bg-secondary-bottom-sheet: var(--bg-secondary-bottom-sheet);
+$bg-primary-bottom-sheet: var(--bg-primary-bottom-sheet);
+$bg-secondary-dialog: var(--bg-secondary-dialog);
+$bg-primary-dialog: var(--bg-primary-dialog);
+$bg-appended-message: var(--bg-appended-message);
+
+$bg-desktop-store-card: var(--bg-desktop-store-card);
+$bg-desktop-sidebar-category: var(--bg-desktop-sidebar-category);
+$bg-product-card: var(--bg-product-card);
+$shadow-product-card: var(--shadow-product-card);
+$shadow-desktop-store-card: var(--shadow-desktop-store-card);

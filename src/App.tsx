@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Layout from "./components/layout/layout";
 import Menu from "./components/menu/menu";
 

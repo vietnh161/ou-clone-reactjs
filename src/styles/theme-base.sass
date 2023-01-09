@@ -1,0 +1,205 @@
+@import 'src/styles/variable-color.scss'
+body
+  color: $text-normal
+  background-color: $bg-color
+// button
+.btn_primary_background
+  background: $primary-colour
+// .btn_primary_background:active
+//   background: $primary-colour-light-fifty
+.btn_primary_background_disabled
+  background: $bg-disabled
+.btn_primary_text
+  color: $text-btn-primary
+.btn_dropdown_border
+  border-color: $primary-colour
+.btn_dropdown_background
+  background: $bg-color
+.btn_dropdown_text
+  color: $primary-colour
+.btn_primary_text_disabled
+  color: $text-disabled
+.btn_secondary_background
+  background: $secondary-colour
+.btn_secondary_background_disabled
+  background: $bg-disabled
+.btn_secondary_text
+  color: $text-btn-secondary
+
+.input_border
+  border: 1px solid $border-normal
+.input_text
+  color: $text-description
+
+.hr_border
+  border: 1px solid $hr-line
+
+.hr_background
+  background: $border-normal
+
+// toaster
+.toaster_error_background
+  background: $error
+.toaster_warning_background
+  background: $warning
+
+// background
+.background_color
+  background: $bg-color
+.background_btn_icon
+  background: $bg-grounded-element
+.bg-element
+  background: $bg-element
+.bg_grounded_element
+  background: $bg-grounded-element
+
+// text
+.text_primary
+  color: $primary-colour
+.text-light
+  color: $text-light
+.text_description
+  color: $text-description
+.text-normal
+  color: $text-normal
+  // border
+.border-normal-color
+  border-color: $border-normal !important
+
+
+.header_box_shadow
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important
+.padding-16
+  padding: 16px
+.customer-profile .input-radius .mat-form-field-outline-end
+  border: 1px solid $border-normal !important
+  background: $bg-grounded-element
+.customer-profile .input-radius-error .mat-form-field-outline-end
+  border: 1px solid $error !important
+  border-radius: 16px 16px 16px 16px !important
+  background: $bg-grounded-element
+.custom-input-number .input-radius .mat-form-field-outline-end
+  border: 1px solid $border-normal !important
+  background: $bg-grounded-element
+.input-fill-custom .mat-form-field-flex
+  background-color: $bg-color !important
+
+input.mat-input-element
+  &::placeholder
+    color: $text-placeholder
+.list-item-box-shadow
+  box-shadow: 0px 4px 16px $box-shadow-item !important
+.product-selected
+  background-color: rgba(120, 116, 116, 0.2)
+.border-error-color
+  border-color: $error!important
+.text-success
+  color: $success
+.background-success
+  background-color: $success
+.background-warning
+  background-color: $warning
+.background-error
+  background-color: $error
+.select-method .infomation .address .icon
+  background: $secondary-colour
+  color: $primary-colour
+.input-placeholder::placeholder,
+.input-placeholder::-ms-input-placeholder,
+.input-placeholder::-webkit-input-placeholder
+  color: $text-placeholder
+.text-success
+  color: $success
+.text-warning
+  color: $warning
+.text-error
+  color: $error
+.np-warning
+  color: $warning
+.np-success
+  color: $success
+.np-error
+  color: $error
+.dot-pulse-color-primary
+  color: $primary-colour!important
+  background-color: $primary-colour!important
+.dot-pulse-color-primary::before
+  color: $primary-colour!important
+  background-color: $primary-colour!important
+.dot-pulse-color-primary::after
+  color: $primary-colour!important
+  background-color: $primary-colour!important
+
+.mat-input-element:disabled
+  color: $text-normal
+input
+  color: $text-normal
+  &::placeholder
+    color: $text-placeholder
+
+.mat-bottom-sheet-container
+  background: none
+.mat-dialog-container
+  background: none
+
+
+// for loading gradient
+.loader.progress
+  background: linear-gradient(270deg, $loading-gradient-start 0%, $loading-gradient-end 100%)!important
+  &:before
+    background-image: linear-gradient(90deg,$loading-gradient-bound,$loading-gradient-center,$loading-gradient-bound)!important
+
+// new added
+
+.bg-store-selector
+  background-color: $bg-store-selector
+.bg-login-group-btn
+  background-color: $bg-login-group-btn
+.bg-login-btn-inactive
+  background-color: $bg-login-btn-inactive
+.bg-preorder-btn-inactive
+  background-color: $bg-preorder-btn-inactive
+.bg-switch-select-method
+  background-color: $bg-switch-select-method
+.bg-switch-select-method-active
+  background-color: $bg-switch-select-method-active!important
+.bg-product-detail
+  background-color: $bg-product-detail
+.bg-p-detail-option-header
+  background-color: $bg-p-detail-option-header
+.bg-add-product-detail
+  background-color: $bg-add-product-detail
+.bg-secondary-bottom-sheet
+  background-color: $bg-secondary-bottom-sheet
+.bg-primary-bottom-sheet
+  background-color: $bg-primary-bottom-sheet
+.bg-secondary-dialog
+  background-color: $bg-secondary-dialog
+.bg-primary-dialog
+  background-color: $bg-primary-dialog
+.bg-cart-item
+  background-color: $bg-cart-item
+.bg-cart-upsell-item
+  background-color: $bg-cart-upsell-item
+.bg-cart-general-input
+  background-color: $bg-cart-general-input
+.bg-cart-bottom-button
+  background-color: $bg-cart-bottom-button
+.text-cart-customer-info
+  color: $text-cart-customer-info
+.text-popup-notification
+  color: $text-popup-notification
+.bg-desktop-store-card
+  background-color: $bg-desktop-store-card
+  background-image: $bg-desktop-store-card //handle for gradient color
+.bg-desktop-sidebar-category
+  background-color: $bg-desktop-sidebar-category
+  background-image: $bg-desktop-sidebar-category  //handle for gradient color
+.bg-product-card
+  background-color: $bg-product-card
+.shadow-product-card
+  box-shadow: $shadow-product-card!important
+.shadow-desktop-store-card
+  box-shadow: $shadow-desktop-store-card!important
+.bg-appended-message
+  background-color: $bg-appended-message

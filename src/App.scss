@@ -1,0 +1,108 @@
+
+@use 'styles/theme-base.sass';
+
+
+// class margin
+@mixin generate-class-margin-left() {
+  @for $i from 0 through 40 {
+      .m-l-#{$i} {
+          margin-left: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-margin-left();
+
+@mixin generate-class-margin-right() {
+  @for $i from 0 through 40 {
+      .m-r-#{$i} {
+          margin-right: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-margin-right();
+
+@mixin generate-class-margin-top() {
+  @for $i from 0 through 40 {
+      .m-t-#{$i} {
+          margin-top: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-margin-top();
+
+@mixin generate-class-margin-bottom() {
+  @for $i from 0 through 40 {
+      .m-b-#{$i} {
+          margin-bottom: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-margin-bottom();
+@mixin generate-class-padding-left() {
+  @for $i from 0 through 40 {
+      .p-l-#{$i} {
+          padding-left: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-padding-left();
+@mixin generate-class-padding-right() {
+  @for $i from 0 through 40 {
+      .p-r-#{$i} {
+          padding-right: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-padding-right();
+@mixin generate-class-padding-top() {
+  @for $i from 0 through 40 {
+      .p-t-#{$i} {
+          padding-top: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-padding-top();
+@mixin generate-class-padding-bottom() {
+  @for $i from 0 through 40 {
+      .p-b-#{$i} {
+          padding-bottom: #{$i + "px"};
+      }
+  }
+}
+@include generate-class-padding-bottom();
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
