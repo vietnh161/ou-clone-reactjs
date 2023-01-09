@@ -10,7 +10,7 @@ export class SubHeader extends Component {
         ></img>
         <div className="address ">
           <p className="text-light name ">Order Up! Demo ( 2 )</p>
-          <div className="text-location location ">
+          <div className="text-location location text-light">
             <p> Chapel Street, VIC </p>
           </div>
         </div>

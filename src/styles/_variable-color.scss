@@ -1,56 +1,67 @@
 :root {
-    --bg-color: #ffffff;
-    --font-color: #1f1f1f;
-    --bg-element: #ffffff;
-    --bg-grounded-element: #f8f8f8;
-    --bg-disabled: #e7e9ec;
-    --text-normal: #1f1f1f;
-    --text-description: #787474;
-    --text-subscription: #787474;
-    --text-btn-primary: #ffffff;
-    --text-notification: #ffffff; /* text in toaster */
-    --text-placeholder:#787474;
-    --text-light: #ffffff;
-    --border-normal: #e7e9ec;
-    --box-shadow-item: rgba(61, 57, 57, 0.1);
-    --hr-line: #e7e9ec;
-    --error: #ef6565;
-    --warning: #fda946;
-    --success: #34a853;
-    --loading-gradient-start: #ededed;
-    --loading-gradient-end: #f8f8f8;
-    --loading-gradient-bound: #ffffff00;
-    --loading-gradient-center: #ffffff99;
-    --cdk-overlay-backdrop-color: rgba(0,0,0,.32);
-  
-    --bg-store-selector: #ffffff;
-    --bg-login-group-btn: #ffffff;
-    --bg-login-btn-inactive: #f8f8f8;
-    --bg-preorder-btn-inactive: #f8f8f8;
-    --bg-switch-select-method: #ffffff;
-    --bg-switch-select-method-active: #f8f8f8;
-    --bg-product-detail: #ffffff;
-    --bg-p-detail-option-header: #f8f8f8;
-    --bg-add-product-detail: #ffffff;
-    --bg-cart-item: #ffffff;
-    --bg-cart-upsell-item: #ffffff;
-    --bg-secondary-bottom-sheet: #ffffff;
-    --bg-primary-bottom-sheet: #ffffff;
-    --bg-secondary-dialog: #ffffff;
-    --bg-primary-dialog: #ffffff;
-    --bg-cart-general-input: #f8f8f8;
-    --bg-cart-bottom-button: #ffffff;
-    --text-cart-customer-info: #1f1f1f;
-    --text-popup-notification: #1f1f1f; /* text in notification dialog */
-  
-    --bg-desktop-store-card: linear-gradient(0deg, rgba(70, 70, 241, 0.1), rgba(70, 70, 241, 0.1));
-    --shadow-desktop-store-card: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --bg-desktop-sidebar-category: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08));
-    --bg-product-card: #fff;
-    --shadow-product-card: 0px 4px 16px #3d39391a;
-    --bg-appended-message: #e2e9ff;
-  }
-  
+  --primary-colour: #ff3c6e;
+  --primary-colour-light-fifty: #fff1f5;
+  --secondary-colour: #952256;
+  --secondary-colour-light-fifty: #f8f0f3;
+  --bg-color: #ffffff;
+  --font-color: #1f1f1f;
+  --bg-element: #ffffff;
+  --bg-grounded-element: #f8f8f8;
+  --bg-disabled: #e7e9ec;
+  --text-normal: #1f1f1f;
+  --text-description: #787474;
+  --text-subscription: #787474;
+  --text-btn-primary: #ffffff;
+  --text-notification: #ffffff; /* text in toaster */
+  --text-placeholder: #787474;
+  --text-light: #ffffff;
+  --border-normal: #e7e9ec;
+  --box-shadow-item: rgba(61, 57, 57, 0.1);
+  --hr-line: #e7e9ec;
+  --error: #ef6565;
+  --warning: #fda946;
+  --success: #34a853;
+  --loading-gradient-start: #ededed;
+  --loading-gradient-end: #f8f8f8;
+  --loading-gradient-bound: #ffffff00;
+  --loading-gradient-center: #ffffff99;
+  --cdk-overlay-backdrop-color: rgba(0, 0, 0, 0.32);
+
+  --bg-store-selector: #ffffff;
+  --bg-login-group-btn: #ffffff;
+  --bg-login-btn-inactive: #f8f8f8;
+  --bg-preorder-btn-inactive: #f8f8f8;
+  --bg-switch-select-method: #ffffff;
+  --bg-switch-select-method-active: #f8f8f8;
+  --bg-product-detail: #ffffff;
+  --bg-p-detail-option-header: #f8f8f8;
+  --bg-add-product-detail: #ffffff;
+  --bg-cart-item: #ffffff;
+  --bg-cart-upsell-item: #ffffff;
+  --bg-secondary-bottom-sheet: #ffffff;
+  --bg-primary-bottom-sheet: #ffffff;
+  --bg-secondary-dialog: #ffffff;
+  --bg-primary-dialog: #ffffff;
+  --bg-cart-general-input: #f8f8f8;
+  --bg-cart-bottom-button: #ffffff;
+  --text-cart-customer-info: #1f1f1f;
+  --text-popup-notification: #1f1f1f; /* text in notification dialog */
+
+  --bg-desktop-store-card: linear-gradient(
+    0deg,
+    rgba(70, 70, 241, 0.1),
+    rgba(70, 70, 241, 0.1)
+  );
+  --shadow-desktop-store-card: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --bg-desktop-sidebar-category: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08)
+  );
+  --bg-product-card: #fff;
+  --shadow-product-card: 0px 4px 16px #3d39391a;
+  --bg-appended-message: #e2e9ff;
+}
 
 $primary-colour: var(--primary-colour);
 $primary-colour-light-fifty: var(--primary-colour-light-fifty);

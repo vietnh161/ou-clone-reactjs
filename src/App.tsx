@@ -2,7 +2,7 @@ import axios from "axios";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
 import Layout from "./components/layout/layout";
-import Menu from "./components/menu/menu";
+import ProductList from "./components/product-list/product-list";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Menu />,
+        element: <ProductList />,
       },
     ],
   },

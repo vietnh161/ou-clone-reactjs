@@ -3,7 +3,8 @@ import { Outlet } from "react-router-dom";
 import Header from "./header/header";
 import Sidebar from "./sidebar/sidebar";
 import SubHeader from "./sub-header/sub-header";
-
+import "./layout.scss";
+import Cart from "../cart/cart";
 export class Layout extends Component {
   render() {
     return (
@@ -17,14 +18,12 @@ export class Layout extends Component {
           <div className="main-content">
             <Outlet />
           </div>
+          <Cart></Cart>
         </div>
       </div>
     );
   }
-  componentDidMount(): void {
-      console.log(1);
-      
-  }
+  componentDidMount(): void {}
 }
 
 export default Layout;

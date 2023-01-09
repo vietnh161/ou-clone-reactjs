@@ -1,0 +1,17 @@
+.product-list-component {
+  .p-list {
+    padding: 20px;
+    .category-name {
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .category-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+}
