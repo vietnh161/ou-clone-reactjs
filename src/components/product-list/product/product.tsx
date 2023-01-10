@@ -5,13 +5,14 @@ import "./product.scss";
 
 type ProductProps = {
   product: any;
+  productSelected: (product: any) => void
 };
 export class Product extends Component<ProductProps, any> {
   render() {
     const product = this.props.product;
     return product ? (
       <div className="product-component">
-        <Button className="product-item" fullWidth>
+        <Button className="product-item" fullWidth onClick={() => this.props.productSelected(product)}>
           <div className="product-image">
             <img
               src={

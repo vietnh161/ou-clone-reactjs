@@ -3,52 +3,49 @@ import _ from "lodash";
 import React, { Component } from "react";
 import Product from "./product/product";
 import "./product-list.scss";
-import { Outlet } from "react-router-dom";
-
-export class ProductList extends Component<any, any> {
-  constructor(props: any) {
-    super(props);
+import { Outlet, useNavigate } from "react-router-dom";
+import slugify from "slugify";
+export default function ProductList(props: any) {
+  const navigate = useNavigate();
+  function showProduct(product: any) {
+    const productSlug =
+      slugify(product.name, {
+        lower: true,
+        remove: /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g,
+        strict: false,
+      }) + `-${product.id}`;
+    navigate(`/product/${productSlug}`);
   }
-
-  showProduct(product: any){
-    console.log(product);
-    
-  }
-  
-
-  render() {
-    return (
-      <div className="product-list-component">
-        {_.values(categoryObj).map((category: any, index) => {
-          return (
-            <React.Fragment key={index}>
-              <div className="p-list ">
-                <div className="category-name">{category.name}</div>
-                <div className="category-description">
-                  {category.description}
-                </div>
-                <div className="list-product">
-                  <Grid container spacing={2}>
-                    {category.products?.map((productId: any, index: any) => {
-                      return (
-                        <Grid key={index} item xs={12} xl={6}>
-                          <Product product={productObj[productId]}/>
-                        </Grid>
-                      );
-                    })}
-                  </Grid>
-                </div>
+  return (
+    <div className="product-list-component">
+      {_.values(categoryObj).map((category: any, index) => {
+        return (
+          <React.Fragment key={index}>
+            <div className="p-list ">
+              <div className="category-name">{category.name}</div>
+              <div className="category-description">{category.description}</div>
+              <div className="list-product">
+                <Grid container spacing={2}>
+                  {category.products?.map((productId: any, index: any) => {
+                    return (
+                      <Grid key={index} item xs={12} xl={6}>
+                        <Product
+                          product={productObj[productId]}
+                          productSelected={showProduct}
+                        />
+                      </Grid>
+                    );
+                  })}
+                </Grid>
               </div>
-            </React.Fragment>
-          );
-        })}
-        <Outlet />
-      </div>
-    );
-  }
+            </div>
+          </React.Fragment>
+        );
+      })}
+      <Outlet />
+    </div>
+  );
 }
-
-export default ProductList;
 
 const categoryObj = {
   "1": {
