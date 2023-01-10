@@ -1,7 +1,17 @@
 
 @use 'styles/theme-base.sass';
 
-
+@mixin generate-class-line-clamp() {
+  @for $i from 1 through 20 {
+      .line-clamp-#{$i} {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: #{$i};
+          -webkit-box-orient: vertical;
+      }
+  }
+}
+@include generate-class-line-clamp();
 // class margin
 @mixin generate-class-margin-left() {
   @for $i from 0 through 40 {

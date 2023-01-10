@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React, { Component } from "react";
+import ProductPrice from "./product-price";
 import "./product.scss";
 
 type ProductProps = {
@@ -21,8 +22,13 @@ export class Product extends Component<ProductProps, any> {
             />
           </div>
           <div className="product-info">
-            <div className="product-name"> {product.name}</div>
-            <div className="product-des"> {product.description}</div>
+            <div className="product-name ">
+              <span className="line-clamp-2"> {product.name}</span>
+            </div>
+            <div className="product-des">
+              <span className="line-clamp-2"> {product.description}</span>
+            </div>
+            <ProductPrice sizes={product.sizes}></ProductPrice>
           </div>
         </Button>
       </div>

@@ -3,8 +3,19 @@ import _ from "lodash";
 import React, { Component } from "react";
 import Product from "./product/product";
 import "./product-list.scss";
+import { Outlet } from "react-router-dom";
 
-export class ProductList extends Component {
+export class ProductList extends Component<any, any> {
+  constructor(props: any) {
+    super(props);
+  }
+
+  showProduct(product: any){
+    console.log(product);
+    
+  }
+  
+
   render() {
     return (
       <div className="product-list-component">
@@ -21,7 +32,7 @@ export class ProductList extends Component {
                     {category.products?.map((productId: any, index: any) => {
                       return (
                         <Grid key={index} item xs={12} xl={6}>
-                          <Product product={productObj[productId]} />
+                          <Product product={productObj[productId]}/>
                         </Grid>
                       );
                     })}
@@ -31,6 +42,7 @@ export class ProductList extends Component {
             </React.Fragment>
           );
         })}
+        <Outlet />
       </div>
     );
   }
@@ -2823,7 +2835,7 @@ const productObj: any = {
     sizes: {
       "1": {
         id: 1,
-        price: 15,
+        price: 15.5,
         extra: 0,
         free: 0,
         extra_toppings: {

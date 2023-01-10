@@ -2,6 +2,7 @@ import axios from "axios";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
 import Layout from "./components/layout/layout";
+import ProducDetail from "./components/product-detail/product-detail";
 import ProductList from "./components/product-list/product-list";
 
 const router = createBrowserRouter([
@@ -12,6 +13,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <ProductList />,
+        children: [
+          {
+            path: "/product",
+            element: <ProducDetail />,
+          },
+        ],
       },
     ],
   },
