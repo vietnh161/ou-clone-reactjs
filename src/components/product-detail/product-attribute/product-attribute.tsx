@@ -3,10 +3,18 @@ import {
   AccordionSummary,
   Typography,
   AccordionDetails,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+  FormControl,
+  Checkbox,
+  FormGroup,
+  FormLabel,
 } from "@mui/material";
 import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import _ from "lodash";
+import './product-attribute.scss'
 
 export default function ProductAttribute(props: {
   sizes: any;
@@ -27,9 +35,30 @@ export default function ProductAttribute(props: {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              {_.values(props.sizes)?.map((sizeAttr) => {
-                return atributeObj[sizeAttr.id]?.name + sizeAttr.price;
-              })}
+              <FormControl>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="female"
+                  name="radio-buttons-group"
+                >
+                  {_.values(props.sizes)?.map((sizeAttr) => {
+                    return (
+                      <div className="attr-item">
+                        <div className="attr-name">
+                          {atributeObj[sizeAttr.id]?.name}
+                        </div>
+                        <div className="attr-price">{sizeAttr.price}</div>
+
+                        <FormControlLabel
+                          value="sizeAttr.id"
+                          control={<Radio />}
+                          label=""
+                        />
+                      </div>
+                    );
+                  })}
+                </RadioGroup>
+              </FormControl>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -43,9 +72,20 @@ export default function ProductAttribute(props: {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              {props.inc_toppings?.map((toppingAttrId: string) => {
-                return atributeObj[toppingAttrId]?.name;
-              })}
+              <FormControl>
+                <FormGroup row>
+                  {props.inc_toppings?.map((toppingAttrId: string) => {
+                    return (
+                      <FormControlLabel
+                        value={atributeObj[toppingAttrId]?.id}
+                        control={<Checkbox />}
+                        label={atributeObj[toppingAttrId]?.name}
+                        labelPlacement="start"
+                      />
+                    );
+                  })}
+                </FormGroup>
+              </FormControl>
             </Typography>
           </AccordionDetails>
         </Accordion>

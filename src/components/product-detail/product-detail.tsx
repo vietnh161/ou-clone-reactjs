@@ -9,7 +9,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
-import ProductAttribute from "./product-attribute";
+import ProductAttribute from "./product-attribute/product-attribute";
 import "./product-detail.scss";
 
 export default function ProducDetail() {
