@@ -4,6 +4,10 @@ import "./App.scss";
 import Layout from "./components/layout/layout";
 import ProducDetail from "./components/product-detail/product-detail";
 import ProductList from "./components/product-list/product-list";
+import SelectLocaion from "./components/store-selector/select-location/select-location";
+import SelectMethodDetail from "./components/store-selector/select-method-detail/select-method-detail";
+import SelectMethod from "./components/store-selector/select-method/select-method";
+import StoreSelector from "./components/store-selector/store-selector";
 
 const router = createBrowserRouter([
   {
@@ -11,12 +15,30 @@ const router = createBrowserRouter([
     element: <Layout></Layout>,
     children: [
       {
-        path: "/",
+        path: "",
         element: <ProductList />,
         children: [
           {
-            path: "/product/:id",
+            path: "product/:id",
             element: <ProducDetail />,
+          },
+          {
+            path: "stores",
+            element: <StoreSelector />,
+            children: [
+              {
+                path: "",
+                element: <SelectLocaion />,
+              },
+              {
+                path: ":id",
+                element: <SelectMethod />,
+              },
+              {
+                path: ":sid/:mid",
+                element: <SelectMethodDetail />,
+              },
+            ],
           },
         ],
       },

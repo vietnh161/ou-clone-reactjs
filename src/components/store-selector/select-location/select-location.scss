@@ -1,0 +1,28 @@
+.store-selector-dialog {
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .store-selector-dialog-content{
+    .store-item-btn {
+        height: 152px;
+        border-radius: 12px;
+        .store-img{
+            width: 120px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .store-name{
+            text-transform: initial;
+        }
+    }
+  }
+  .skip-btn{
+    margin-top: 20px;
+  }
+}
