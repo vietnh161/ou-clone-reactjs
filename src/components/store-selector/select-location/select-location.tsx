@@ -5,11 +5,17 @@ import {
   DialogTitle,
   Grid,
 } from "@mui/material";
+import _ from "lodash";
+import { connect } from "react-redux";
 import { useNavigate } from "react-router";
 import "./select-location.scss";
 
-export default function SelectLocaion() {
+export function SelectLocaion({stores} : any ) {
   const navigate = useNavigate();
+  let storesList : any = [];
+  if(stores) {
+    storesList = _.values(stores);
+  }
 
   function handleClose(e: any, reason: any) {
     if (reason == "backdropClick") {
@@ -35,9 +41,9 @@ export default function SelectLocaion() {
       <DialogContent>
         <div className="store-selector-dialog-content">
           <Grid container spacing={2}>
-            {[1, 2, 3].map((x) => {
+            {storesList.map((store: any, index: number) => {
               return (
-                <Grid item xs={6}>
+                <Grid item xs={6} key={index}>
                   <div className="store-item">
                     <Button
                       className="store-item-btn"
@@ -51,7 +57,7 @@ export default function SelectLocaion() {
                           alt=""
                         />
                       </div>
-                      <div className="store-name"> Greenville Hotel New </div>
+                      <div className="store-name"> {store.store_name} </div>
                     </Button>
                   </div>
                 </Grid>
@@ -72,3 +78,8 @@ export default function SelectLocaion() {
     </Dialog>
   );
 }
+
+
+const mapStateToProps = (state : any) => ({stores: state.storeReducer.stores})
+
+export default connect(mapStateToProps, {})(SelectLocaion)

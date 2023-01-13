@@ -1,9 +1,10 @@
+import { connect, useSelector } from "react-redux";
 import { Outlet } from "react-router";
-import SelectLocaion from "./select-location/select-location";
-import SelectLocation from "./select-location/select-location";
 
 export default function StoreSelector() {
-  return <div>
-        <Outlet></Outlet>
-  </div>;
+  return (
+    <div className="aaa">
+      <Outlet></Outlet>
+    </div>
+  );
 }
