@@ -60,13 +60,12 @@ axios.interceptors.request.use((request) => {
 });
 function App() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     storeService
     .getStores()
     .then((res)  => {
       if(res?.data?.stores) {
-        dispatch(allActions.storeActions.setAllStores(res.data.stores))
+        dispatch(allActions.storeActions.setAllStores(res.data.stores || null))
       }
     })
     .catch((err) => {

@@ -9,7 +9,7 @@ export type StoreState = {
 };
 
 const initialState: StoreState = {
-  stores: null,
+  stores: undefined,
   currentStore: null,
   currentMethod: null,
   menu: null,
