@@ -1,5 +1,9 @@
 
 @use 'styles/theme-base.sass';
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial
+}
 
 @mixin generate-class-line-clamp() {
   @for $i from 1 through 20 {
